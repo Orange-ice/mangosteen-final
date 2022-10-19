@@ -1,8 +1,13 @@
 import { defineComponent } from 'vue';
+import { RouterView } from 'vue-router';
+import './stylesheets/App.scss'
+
 export const App = defineComponent({
   setup: (props, context) => {
     return () => (
-      <div>This is App.</div>
+      <div>
+        <RouterView />
+      </div>
     )
   }
 })
